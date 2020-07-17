@@ -46,7 +46,7 @@ const NavBar = () => {
           <AlignRightOutlined type='align-right' />
         </Button>
         <Drawer
-          title='Basic Drawer'
+          title='Movie Bluff'
           placement='right'
           className='menu_drawer'
           closable={false}

@@ -4,6 +4,12 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { registerUser } from '../../../_actions/user_actions';
 import { useDispatch } from 'react-redux';
+import {
+  SmileFilled,
+  SmileOutlined,
+  SmileTwoTone,
+  SmallDashOutlined,
+} from '@ant-design/icons';
 
 import { Form, Input, Button } from 'antd';
 
@@ -88,9 +94,11 @@ const RegisterPage = (props) => {
         } = props;
         return (
           <div className='app'>
-            <h2>Sign up</h2>
+            <h2>
+              Register your Account <SmileTwoTone />
+            </h2>
             <Form
-              style={{ minWidth: '360px' }}
+              style={{ minWidth: '340px' }}
               {...formItemLayout}
               onSubmit={handleSubmit}
             >
@@ -208,6 +216,7 @@ const RegisterPage = (props) => {
                   onClick={handleSubmit}
                   type='primary'
                   disabled={isSubmitting}
+                  style={{ marginLeft: '130px' }}
                 >
                   Submit
                 </Button>
